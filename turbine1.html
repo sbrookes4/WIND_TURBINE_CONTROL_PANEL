@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Wind Turbine Demo</title>
+	<link rel="stylesheet" type="text/css" href="turbine1.css">
+
+</head>
+<!--http://www.brookesportfolio.com/ -->
+<body id="noBueno">
+
+<div id="headerZ">
+	<div id="headerZtext">UI/UX for an Imaginary Wind Turbine </div>
+</div>
+
+<div id="aboutDemo">
+	<div id="headerZtext2">Instructions:<br>Hit "Speed Reset" before changing wind speeds. Enjoy the animations! Parameters are quasi-realistic. See js code for details.<br />Demo shows JavaScript and jQuery creativity. (No birds were harmed in the development of this website - I endorse green energy!)
+	</div>
+</div>
+
+<div id="demoContainer">
+
+	<div id="birdFlightBox">
+		<img id="birdy"  src="http://www.brookesportfolio.com/WEB/bird22.gif"> 
+	</div>
+
+
+	<div id="turbineCont">
+		<img id="poleZ" src="http://www.brookesportfolio.com/WEB/POLE.png">
+		<img id="bladeZZZ" src="http://www.brookesportfolio.com/WEB/BLADEZ2.png">
+   		<img id="fireLLZ"  src="http://www.brookesportfolio.com/WEB/fireLOLZ.png"> 
+   		<img id="fireLLZ1"  src="http://www.brookesportfolio.com/WEB/fireLOLZ.png"> 
+	</div>
+	
+	<div id="infoBox">
+
+		<div id="digiTak">
+		
+			<div id="digiTakText"> OUTPUT KW: <span id="KW"> -</span> </div>
+
+			<div id="tachometer" class="takClass" ></div>
+
+		</div>
+
+
+		<div id="readOutBox">
+
+			<div id="digits">
+			
+				<div class="readOutTextz">Wind Speed: <span id="WS"> - </span> mph</div>
+				<div class="readOutTextz">RPM: <span id="RPM"> - </span></div>	
+				<div class="readOutTextz">Volts: <span id="VOLTS"> - </span> kV</div>
+				<div class="readOutTextz">Amps: <span id="AMPS"> - </span> A</div>			
+				<div class="readOutTextz">Vib Frequency: <span id="vibFreq"> - </span> hZ</div>
+				<div class="readOutTextz">Vib Freq Blade 1: <span id="vibFreq1"> - </span> hZ</div>
+				<div class="readOutTextz">Vib Freq Blade 2: <span id="vibFreq2"> - </span> hZ</div>
+				<div class="readOutTextz">Vib Freq Blade 3: <span id="vibFreq3"> - </span> hZ</div>
+				<div class="readOutTextz">Deflection: <span id="def"> - </span> mm @ <span id="def2"> - </span>° </div>	
+				<div class="readOutTextz">Gen Temp: <span id="genTemp"> - </span> °F</div>	
+				<div class="readOutTextz">GrBx Oil Temp: <span id="grbxTemp"> - </span> °F</div>	
+				<div class="readOutTextz">Oil Pump Press: <span id="pressure"> - </span> PSI</div>
+				<div class="readOutTextz">Oil Level: <span id="levelZ"> - </span> %</div>
+		
+			</div><!--digits-->
+
+			<div id="videoBox"></div>
+
+		</div><!-- ReadOutBox -->
+		
+	<div id="speedSelectText">Select Speed</div>
+
+	<div>
+
+		<button onclick="startRotation()">5 - 10<br /> mph</button>
+		<button onclick="startRotation1()">11 - 20<br /> mph</button>
+		<button onclick="startRotation2()">21 - 30<br /> mph</button>
+		<button onclick="startRotation3()">31 - 40<br /> mph</button>
+		<button onclick="startRotation4()">41 - 50<br /> mph</button>
+		<button onclick="startRotation5()">51 - 60<br /> mph</button>
+		<button onclick="startRotation6()">61+<br /> mph</button>
+		<button onclick="Clutch()">Speed/ Bird<br />Reset</button>
+
+	</div>
+
+</div><!-- infoBox -->
+
+</div><!--demoContainer-->
+
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous">
+  </script>
+
+<script src="turbine1.js"></script>
+
+</body>
+
+</html>
